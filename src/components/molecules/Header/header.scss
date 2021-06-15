@@ -1,0 +1,130 @@
+
+header{
+    width: 100%;
+    .nav-blue{
+        background-color: #032541;
+    }
+    .navbar{
+        width: 100%;
+        top: 0;
+        position: fixed;
+        display: grid;
+        transition: 0.5s ease-in-out;
+        grid-template-columns: 2fr 1fr;
+        padding: 0 50px;
+        margin: 0 auto;
+        min-height: 66px;
+        z-index: 999;
+        .nav-left{
+            display: grid;
+            grid-template-columns: 0.5fr 2fr;
+            align-items: center;
+            .menu{
+                display: flex;
+                align-items: center;
+                li{
+                    margin-left: 10px;
+                    list-style: none;
+                    a{
+                        text-decoration: none;
+                        padding: 20px 15px;
+                        font-weight: 500;
+                        color: #C6C8CB;
+                    }
+                    a:hover{
+                        color: white;
+                    }
+                }
+            }
+            
+        }
+        .nav-right{
+            display: grid;
+            justify-content: center;
+            grid-template-columns: 1fr;
+            margin-right: 120px;
+            .info{
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                li{
+                    list-style: none;
+                }
+        
+                .language{
+                    .lang{
+                        width: 28px;
+                        height: 26px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border: 2px solid #C6C8CB;
+                        border-radius: 3px;
+                        padding: 1px 3px;
+                        transition: linear.1s;
+                        color: #C6C8CB;
+                        font-size: 0.9em;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        cursor: pointer;
+                    }
+                    .lang:hover{
+                        background-color: #fff;
+                        color: #0C111B;
+                        border-color: #fff;
+                    }
+                }
+                .login{
+                    margin-left: 30px;
+                    background-color: #1F80E0;
+                    border-radius: 4px;
+                    line-height: 24px;
+                    height: 24px;
+                    a{
+                        text-decoration: none;
+                        color: #fff;
+                        font-weight: 500;
+                        padding: 0 12px;
+                        font-size: 12px;
+                        border: none;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                    }
+                }
+                
+                .login:hover{
+                    background-color: #71a7dd;
+                }
+                .register{
+                    margin-left: 20px;
+                    background-color: #1F80E0;
+                    border-radius: 4px;
+                    line-height: 24px;
+                    height: 24px;
+                    a{
+                        text-decoration: none;
+                        color: #fff;
+                        font-weight: 500;
+                        padding: 0 12px;
+                        font-size: 12px;
+                        border: none;
+                        text-transform: uppercase;
+                    }
+                    a:hover{
+                        color: #fff;
+                    }
+                }
+                .register:hover{
+                    background-color: #71a7dd;
+                }
+                .search{
+                    margin-left: 30px;
+                    i{
+                        font-size: 1.4em;
+                        color: #01B4E4;
+                    }
+                }
+            }
+        }
+    }
+}
