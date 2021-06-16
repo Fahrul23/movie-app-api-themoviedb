@@ -14,7 +14,7 @@ header{
         padding: 0 50px;
         margin: 0 auto;
         min-height: 66px;
-        z-index: 999;
+        z-index: 9999;
         .nav-left{
             display: grid;
             grid-template-columns: 0.5fr 2fr;
@@ -34,6 +34,13 @@ header{
                     a:hover{
                         color: white;
                     }
+                }
+            }
+            .logo{
+                h3{
+                    color: #01B4E4;
+                    font-size: 1.4em;
+                    font-weight: 600;
                 }
             }
             

@@ -1,0 +1,180 @@
+.movies{
+    margin-left: 53px;
+    .header-movies{
+        width: 150px;
+        margin-bottom: 20px;
+        h3{
+            color: #FFFFFF;
+            cursor: pointer;
+        }
+        h3:hover{
+            color: #0C3FC7;
+        }
+    }
+    .movies-wrapper{
+        margin-bottom: 25px;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(auto-fit,minmax(140px,150px));
+        .card-movies{
+            cursor: pointer;
+            position: relative;
+            height: 200px;
+            transition: 0.4s ease-in-out;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 7px;
+            }
+            .desc-movie{
+                top: 85px;
+                left: 6px;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                z-index: 9999;
+                p{
+                    opacity: 0;
+                    transition: 0.5s ease-in-out;
+                    margin-top: 2px;
+                    font-weight: 500;
+                    color: #b8b9b9;
+                    font-size: 0.6em;
+                    margin-right: 7px;
+                }
+                p:nth-child(1){
+                    color: #fff;
+                    font-size: 0.7em;
+                }
+            }
+            .opacity{
+                transition: 0.5s ease-in-out;
+                border-radius: 10px;
+                width: 100%;
+                height: 120px;
+                top: 80px;
+                opacity: 0;
+                position: absolute;
+                background-color: rgba(#032541, 0.6);
+            }
+            
+        }
+        .card-movies:hover{
+            transform: scale(1.3);
+            transition-delay: 0.4s;
+            z-index: 9999;
+            .desc-movie{
+                p{
+                    opacity: 0.8;
+                    transition-delay: 0.8s;
+                    
+                }
+            }
+            .opacity{
+                transition-delay: 0.5s;
+                opacity: 1;
+            }
+        }
+        
+    }
+    .movies-wrapper-trailers{
+        margin-bottom: 25px;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(auto-fit,minmax(160px,200px));
+        .card-movies-trailers{
+            position: relative;
+            transition: 0.4s ease-in-out;
+            height: 115px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 7px;
+            }
+            .title{
+                transition:0.5s ease-in-out;
+                display: flex;
+                align-items: center;
+                top: 86px;
+                left: 12px;
+                position: absolute;
+                color: #fff;
+                p{
+                    font-size: 0.8em;
+                    margin-left: 8px;
+                    font-weight: 600;
+                }
+                i{
+                    font-size: 0.7em;
+                }
+            }
+            .title-opacity{
+                z-index: 9999;
+                transition: 0.6s ease-in-out;
+                display: flex;
+                align-items: center;
+                top: 50px;
+                left: 12px;
+                position: absolute;
+                color: #fff;
+                opacity: 0;
+                p{
+                    font-size: 0.8em;
+                    margin-left: 8px;
+                    font-weight: 600;
+                }
+                i{
+                    font-size: 0.7em;
+                }
+            }
+            .desc{
+                z-index: 9999;
+                opacity: 0;
+                transition: 0.6s ease-in-out;
+                position: absolute;
+                top: 65px;
+                left: 12px;
+                font-size: 0.7em;
+                font-weight: 600;
+                color: #b0b4b8;
+                margin-top: 3px;
+                
+            }
+            .opacity{
+                border-radius: 7px;
+                opacity: 0;
+                transition: 0.5s ease-in-out;
+                width: 100%;
+                height: 70px;
+                position: absolute;
+                top: 45px;
+                background-color: rgba(#032541, 0.6);
+            }
+        }
+        .card-movies-trailers:hover{
+            transform: scale(1.3);
+            transition-delay: 0.4s;
+            z-index: 9999;
+            .title{
+                opacity: 0;
+            }
+            .title-opacity{
+                opacity: 1;
+                transition-delay: 0.6s;
+            }
+            .desc{
+                transition-delay: 0.6s;
+                opacity: 0.8;
+            }
+            .opacity{
+                opacity: 1;
+                transition-delay: 0.5s;
+            }
+        }
+    }
+}
+.popular{
+    margin-top: 22px;
+}

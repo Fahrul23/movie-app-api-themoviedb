@@ -1,3 +1,4 @@
 import Header from "./Header";
 import Banner from "./Banner";
-export {Header, Banner};
+import Popular from "./Movies/Popular";
+export {Header, Banner,Popular};

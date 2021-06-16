@@ -1,13 +1,27 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './header.scss';
 
+
 function Header(props) {
+
+    useEffect(() => {
+        window.addEventListener("scroll",function(){
+            var nav = document.getElementById('nav');
+            if(window.scrollY > 110){
+                nav.classList.add("nav-blue");
+            }else if(window.scrollY < 100){
+                nav.classList.remove("nav-blue")
+            }
+        
+        })
+    }, []);
+    
     return (
             <header>
                 <nav class="navbar" id="nav">
                     <div class="nav-left">
                         <div class="logo">
-                            <img src="img/logo.svg" alt="" />
+                            <h3>MOVIE - APP</h3>
                         </div>
                         <ul class="menu">
                             <li><a href="#">Movies</a></li>
