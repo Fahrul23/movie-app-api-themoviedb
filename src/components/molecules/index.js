@@ -1,3 +1,3 @@
 import Header from "./Header";
-
-export {Header};
+import Banner from "./Banner";
+export {Header, Banner};

@@ -1,10 +1,11 @@
 import React from 'react';
-import { Header } from '../../components/index';
+import { Header,Banner } from '../../components/index';
 
 function Home(props) {
     return (
         <div>
             <Header />
+            <Banner />
         </div>
     );
 }
