@@ -4,17 +4,6 @@ import './header.scss';
 
 function Header(props) {
 
-    useEffect(() => {
-        window.addEventListener("scroll",function(){
-            var nav = document.getElementById('nav');
-            if(window.scrollY > 110){
-                nav.classList.add("nav-blue");
-            }else if(window.scrollY < 100){
-                nav.classList.remove("nav-blue")
-            }
-        
-        })
-    }, []);
     
     return (
             <header>

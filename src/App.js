@@ -1,9 +1,8 @@
-
-import './App.css';
-import Home from './pages/Home';
+import React from 'react';
+import Routes from './config/Routes';
 function App() {
   return (
-    <Home/>
+      <Routes/>
   );
 }
 
