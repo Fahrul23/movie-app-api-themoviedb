@@ -31,7 +31,7 @@ function Popular(props) {
 
     useEffect(() => {
         getMovies();
-
+    console.log(movies);
     },[])
 
     return (

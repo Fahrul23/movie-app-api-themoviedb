@@ -1,20 +1,31 @@
 import React from 'react';
 import './banner.scss';
+import banner from '../../../assets/img/banner.jpg';
+import { useHistory } from 'react-router-dom';
+
 function Banner(props) {
+    
+    const id = 399566;    
+    
+    let history = useHistory();
+
+    function handleClick(id){
+        history.push(`/detail/${id}`);
+    }
+
     return (
-        <section className="banner">
-            <div className="img-banner">
-                <div className="title-banner">
-                    <h1>Rayaaaa and the Last Dragon</h1>
-                    <h4>Family . 2021</h4>
-                    <p>Raya, afallen princes, must track down the legendary last dragon to stop the evil forces that have returned and threaten her world</p>
+        <section class="banner">
+            <div class="img-banner">
+                <div class="title-banner">
+                    <h1 onClick={()=> handleClick(id) }>Godzilla vs. Kong (2021)</h1>
+                    <h4>Action, Science Fiction, Adventure, 1h 53m </h4>
+                    <p>In a time when monsters walk the Earth, humanity’s fight for its future sets Godzilla and Kong on a collision course that will see the two most powerful forces of nature on the planet collide in a spectacular battle for the ages.</p>
                 </div>
-                <div className="img-movie">
-                    <img src="https://gdb.voanews.com/B78962FE-1A74-4B08-8C58-E366677EAB82_cx0_cy15_cw0_w1080_h608_s.jpg" alt="#"/>
+                <div class="img-movie" onClick={()=> handleClick(id) }>
+                    <img src={banner} alt="" />
                 </div>
             </div>
-        </section>
-        
+        </section>        
     );
 }
 
