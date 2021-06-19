@@ -1,3 +1,4 @@
 import CardMovie from "./CardMovie";
+import CardMoviesTrailers from './CardMoviesTrailers';
 
-export {CardMovie}
+export {CardMovie,CardMoviesTrailers}

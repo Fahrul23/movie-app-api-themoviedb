@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  background-color: #0C111B;
+  font-size: 1em;
+}
+
+.movies-trailers .header-movies-trailers {
+  width: 150px;
+  margin-left: 57px;
+}
+
+.movies-trailers .header-movies-trailers h3 {
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.movies-trailers .movies-wrapper-trailers {
+  position: relative;
+  margin-bottom: 25px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
+}
+
+.movies-trailers .movies-wrapper-trailers .card-movies-trailers {
+  cursor: pointer;
+  min-width: 200px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+  margin-top: 32px;
+  position: relative;
+  height: 115px;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.movies-trailers .movies-wrapper-trailers .card-movies-trailers img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 7px;
+}
+
+.movies-trailers .movies-wrapper-trailers .card-movies-trailers .desc-movie-trailer {
+  top: 37px;
+  left: 6px;
+  position: absolute;
+  z-index: 9999;
+}
+
+.movies-trailers .movies-wrapper-trailers .card-movies-trailers .desc-movie-trailer .title-trailer {
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.movies-trailers .movies-wrapper-trailers .card-movies-trailers .desc-movie-trailer .title-trailer i {
+  color: #f3f1f1;
+  font-size: 0.7em;
+}
+
+.movies-trailers .movies-wrapper-trailers .card-movies-trailers .desc-movie-trailer p {
+  opacity: 0;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  margin-top: 5px;
+  font-weight: 500;
+  color: #cfcfcf;
+  font-size: 0.6em;
+  margin-right: 7px;
+}
+
+.movies-trailers .movies-wrapper-trailers .card-movies-trailers .desc-movie-trailer p:nth-child(1) {
+  color: #928383;
+  font-size: 0.62em;
+  font-weight: 600;
+}
+
+.movies-trailers .movies-wrapper-trailers .card-movies-trailers .opacity-trailer {
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  border-radius: 10px;
+  width: 100%;
+  height: 86px;
+  top: 30px;
+  opacity: 0;
+  position: absolute;
+  background-color: rgba(3, 37, 65, 0.6);
+}
+
+.movies-trailers .movies-wrapper-trailers .card-movies-trailers .title-opacity-trailer {
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 80px;
+  left: 10px;
+  color: #f3f1f1;
+}
+
+.movies-trailers .movies-wrapper-trailers .card-movies-trailers .title-opacity-trailer p {
+  font-size: 0.8em;
+  margin-left: 8px;
+  font-weight: 600;
+}
+
+.movies-trailers .movies-wrapper-trailers .card-movies-trailers .title-opacity-trailer i {
+  font-size: 0.7em;
+}
+
+.movies-trailers .movies-wrapper-trailers .card-movies-trailers:nth-child(1) {
+  margin-left: 57px;
+}
+
+.movies-trailers .movies-wrapper-trailers .card-movies-trailers:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+  z-index: 99999;
+}
+
+.movies-trailers .movies-wrapper-trailers .card-movies-trailers:hover .desc-movie-trailer .title-trailer {
+  opacity: 0.8;
+  color: #fff;
+  -webkit-transition-delay: 0.8s;
+          transition-delay: 0.8s;
+}
+
+.movies-trailers .movies-wrapper-trailers .card-movies-trailers:hover .desc-movie-trailer .title-trailer p {
+  font-size: 0.8em;
+  margin-left: 8px;
+  font-weight: 600;
+}
+
+.movies-trailers .movies-wrapper-trailers .card-movies-trailers:hover .desc-movie-trailer p {
+  opacity: 0.8;
+  -webkit-transition-delay: 0.8s;
+          transition-delay: 0.8s;
+}
+
+.movies-trailers .movies-wrapper-trailers .card-movies-trailers:hover .opacity-trailer {
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+  opacity: 1;
+}
+
+.movies-trailers .movies-wrapper-trailers .card-movies-trailers:hover .title-opacity-trailer {
+  opacity: 0;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.movies-trailers .movies-wrapper-trailers::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+}
+
+.movies-trailers .movies-wrapper-trailers::-webkit-scrollbar-thumb {
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#00c6ff));
+  background: linear-gradient(transparent, #00c6ff);
+  border-radius: 8px;
+}
+
+.movies-trailers .movies-wrapper-trailers::-webkit-scrollbar-thumb:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#63adca));
+  background: linear-gradient(transparent, #63adca);
+  border-radius: 8px;
+}
+/*# sourceMappingURL=trailer.css.map */

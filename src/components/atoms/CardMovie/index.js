@@ -16,8 +16,7 @@ function CardMovie(props) {
                 <img src={image} alt={title} />
                 <div className="desc-movie">
                     <p>{title}</p>
-                    <p>{genres}</p>
-                    <p>{rilis},{time}</p>
+                    <p>{rilis}</p>
                     <p>{desc}</p>        
                 </div>
                 <div className="opacity"></div>

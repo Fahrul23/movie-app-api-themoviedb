@@ -1,0 +1,245 @@
+.detail-movie {
+  margin-top: 70px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.65fr 2fr;
+      grid-template-columns: 0.65fr 2fr;
+}
+
+.detail-movie .poster {
+  margin-left: 53px;
+}
+
+.detail-movie .poster .movie-card {
+  margin-top: 40px;
+  width: 300px;
+  height: 448px;
+  background-color: black;
+}
+
+.detail-movie .poster .movie-card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.detail-movie .poster .movie-footer {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-grid-columns: 36px 125px;
+      grid-template-columns: 36px 125px;
+  width: 300px;
+  height: 60px;
+  background-color: #032541;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.detail-movie .poster .movie-footer .provider {
+  height: 35px;
+}
+
+.detail-movie .poster .movie-footer .provider img {
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.detail-movie .poster .movie-footer .text {
+  margin-left: 13px;
+}
+
+.detail-movie .poster .movie-footer .text h5 {
+  line-height: 17px;
+  color: #ddd0d0;
+}
+
+.detail-movie .content {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-left: 53px;
+  margin-top: 40px;
+}
+
+.detail-movie .content .title-wrapper .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.detail-movie .content .title-wrapper .title h1 {
+  color: white;
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.detail-movie .content .title-wrapper .title span {
+  display: inline-block;
+  font-size: 32px;
+  color: #D0D0D2;
+  font-weight: 500;
+  margin-left: 7px;
+}
+
+.detail-movie .content .title-wrapper .info {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.detail-movie .content .title-wrapper .info .genres, .detail-movie .content .title-wrapper .info .runtime {
+  margin-left: 5px;
+}
+
+.detail-movie .content .action {
+  margin-top: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.detail-movie .content .action .list {
+  margin-left: 19px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  background-color: #032541;
+}
+
+.detail-movie .content .action .list i {
+  color: #fff;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.detail-movie .content .action .vidio-trailer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+  color: #fff;
+  margin-left: 19px;
+}
+
+.detail-movie .content .action .vidio-trailer p {
+  margin-left: 10px;
+  font-weight: 500;
+}
+
+.detail-movie .content .action .vidio-trailer i {
+  font-size: 0.9em;
+}
+
+.detail-movie .content .action .chart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.detail-movie .content .action .chart .percent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #032541;
+  border: 4px solid #D2D531;
+}
+
+.detail-movie .content .action .chart .percent h2 {
+  color: #fff;
+}
+
+.detail-movie .content .action .chart .percent p {
+  color: #fff;
+  margin-left: 2px;
+  font-size: 0.6em;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.detail-movie .content .action .chart .user-score {
+  color: #fff;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.detail-movie .content .movie-info {
+  margin-top: 25px;
+}
+
+.detail-movie .content .movie-info .tagline {
+  font-size: 1.1em;
+  font-weight: 400;
+  font-style: italic;
+  opacity: 0.7;
+  color: #9C9BA0;
+}
+
+.detail-movie .content .movie-info .Overview {
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.detail-movie .content .movie-info p {
+  color: #fff;
+  font-weight: 400;
+  margin-top: 12px;
+}
+
+.detail-movie .content .people-info {
+  margin-top: 22px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.detail-movie .content .people-info .profile {
+  margin-top: 10px;
+}
+
+.detail-movie .content .people-info .profile p {
+  color: #fff;
+}
+/*# sourceMappingURL=detail.css.map */

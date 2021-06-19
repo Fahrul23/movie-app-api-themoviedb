@@ -32,7 +32,6 @@
             border-bottom-right-radius:7px;
             .provider{
                 height: 35px;
-                background-color: white;
                 img{
                     border-radius: 4px;
                     width: 100%;
@@ -79,13 +78,7 @@
                 .genres, .runtime{
                     margin-left: 5px;
                 }
-                .certification{
-                    margin-right: 5px;
-                    border: 1px solid rgba(255,255,255,0.6);
-                    color: rgba(255,255,255,0.6);
-                    padding: 0 5px;
-                    border-radius: 3px;
-                }
+              
             }
         }
         .action{

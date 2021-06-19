@@ -89,7 +89,7 @@ export default function Detail(props) {
                 <section class="detail-movie">
                     <div class="poster">
                         <div class="movie-card">
-                            <img src={`https://www.themoviedb.org/t/p/w300_and_h450_bestv2/${movies.backdrop_path}`} alt="img-cover" />
+                            <img src={`https://www.themoviedb.org/t/p/w300_and_h450_bestv2/${movies.poster_path}`} alt="img-cover" />
                         </div>
                         <div class="movie-footer">
                             <div class="provider">
@@ -108,9 +108,6 @@ export default function Detail(props) {
                                 <span>(2021)</span>
                             </div>
                             <div class="info">
-                                <div class="certification">
-                                    <p>R</p>
-                                </div>
                                 <p class="release">{movies.release_date}</p>
                                 <p class="genres">
                                     {

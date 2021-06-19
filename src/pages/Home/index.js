@@ -1,11 +1,15 @@
 import React from 'react';
-import { Header,Banner,Popular } from '../../components';
+import { Header,Banner,Popular,Trending,TopRated,UpComing,NowPlaying } from '../../components';
 function Home(props) {
     return (
         <div>
             <Header />
             <Banner />
             <Popular />
+            <Trending />
+            <TopRated />
+            <UpComing/>
+            <NowPlaying/>
         </div>
     );
 }

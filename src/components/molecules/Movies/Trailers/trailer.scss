@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    background-color: #0C111B;
+    font-size: 1em;
+}
+.movies-trailers{
+    .header-movies-trailers{
+        width: 150px;
+        margin-left: 57px;
+        h3{
+            color: #FFFFFF;
+            cursor: pointer;
+        }
+        
+    }
+    .movies-wrapper-trailers{
+        position: relative;
+        margin-bottom: 25px;
+        width: 100%;
+        display: flex;
+        overflow-x: auto;
+        .card-movies-trailers{
+            cursor: pointer;
+            min-width: 200px;
+            margin-right: 10px;
+            margin-bottom: 40px;
+            margin-top: 32px;
+            position: relative;
+            height: 115px;
+            transition: 0.4s ease-in-out;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 7px;
+            }
+            .desc-movie-trailer{
+                top: 37px;
+                left: 6px;
+                position: absolute;
+                z-index: 9999;
+                .title-trailer{
+                    opacity: 0;
+                    display: flex;
+                    align-items: center;
+                    i{
+                        color: rgb(243, 241, 241);
+                        font-size: 0.7em;
+                    }
+                }
+                p{
+                    opacity: 0;
+                    transition: 0.5s ease-in-out;
+                    margin-top: 5px;
+                    font-weight: 500;
+                    color: #cfcfcf;
+                    font-size: 0.6em;
+                    margin-right: 7px;
+                }
+                p:nth-child(1){
+                    color: rgb(146, 131, 131);
+                    font-size: 0.62em;
+                    font-weight: 600;
+                }
+            }
+            .opacity-trailer{
+                // border: 1px solid white;
+                transition: 0.5s ease-in-out;
+                border-radius: 10px;
+                width: 100%;
+                height: 86px;
+                top: 30px;
+                opacity: 0;
+                position: absolute;
+                background-color: rgba(#032541, 0.6);
+            }
+            .title-opacity-trailer{
+                transition:0.5s ease-in-out;
+                display: flex;
+                position: absolute;
+                top: 80px;
+                left: 10px;
+                color: rgb(243, 241, 241);
+                p{
+                    font-size: 0.8em;
+                    margin-left: 8px;
+                    font-weight: 600;
+                }
+                i{
+                    font-size: 0.7em;
+                }
+            }
+            
+        }
+        .card-movies-trailers:nth-child(1){
+            margin-left: 57px;
+        }
+        .card-movies-trailers:hover{
+            transform: scale(1.3);
+            transition-delay: 0.4s;
+            z-index: 99999;
+            .desc-movie-trailer{
+                .title-trailer{
+                    opacity: 0.8;
+                    color: #fff;
+                    transition-delay: 0.8s;
+                    p{
+                        font-size: 0.8em;
+                        margin-left: 8px;
+                        font-weight: 600;
+                    }
+                    
+                }
+                p{
+                    opacity: 0.8;
+                    transition-delay: 0.8s;
+                    
+                }
+            }
+            .opacity-trailer{
+                transition-delay: 0.5s;
+                opacity: 1;
+            }
+            .title-opacity-trailer{
+                opacity: 0;
+                transition-delay: 0.1s;
+            }
+        }
+        
+    }
+    .movies-wrapper-trailers::-webkit-scrollbar{
+        width: 5px;
+        height: 8px;
+    }
+    .movies-wrapper-trailers::-webkit-scrollbar-thumb{
+         background: linear-gradient(transparent,#00c6ff);
+         border-radius: 8px;
+    }
+    .movies-wrapper-trailers::-webkit-scrollbar-thumb:hover{
+         background: linear-gradient(transparent,#63adca);
+         border-radius: 8px;
+    }
+}
