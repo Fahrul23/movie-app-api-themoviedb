@@ -1,7 +1,7 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 function CardMovie(props) {
-    const {title,genres,rilis,time,desc,image,id_movie} = props;
+    const {title,rilis,desc,image,id_movie} = props;
     
     let history = useHistory();
 

@@ -2,13 +2,10 @@ import React,{useEffect,useState} from 'react';
 import './popular.scss';
 import { CardMovie } from '../../../../components';
 import axios from 'axios';
-import { useHistory } from 'react-router-dom';
 function Popular(props) {
     const [movies,setMovies] = useState({});
-    const [genres,setGenres] = useState([]);
     const [loading, setLoading] = useState(false)
     
-    let history = useHistory();
     const getMovies = async () =>{
         try {
             let response = await axios.get('https://api.themoviedb.org/3/movie/popular',{
@@ -32,7 +29,7 @@ function Popular(props) {
     useEffect(() => {
         getMovies();
     console.log(movies);
-    },[])
+    },[movies])
 
     return (
         <div>
