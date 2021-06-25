@@ -9,6 +9,7 @@ export default function Detail(props) {
     const [movies, setMovies] = useState();
     const [loading,setLoading] = useState();
     const [runtimehour,setRuntimeHour]=useState();
+    const [runtimeminute,setRuntimeMinute]=useState();
     const [credits,setCredits]=useState();
     const [director,setDirector]=useState();
     const [story,setStory]=useState();
@@ -25,10 +26,19 @@ export default function Detail(props) {
             });
             
             setMovies(response.data);
-            setLoading(true);
-            const hourdata = Math.floor(movies.runtime / 60);
-            setRuntimeHour(hourdata);
-            console.log("movies :",movies)
+            
+            const totalseconds = response.data.runtime * 60;
+            const hour = Math.floor(totalseconds/3600);
+            const countminute = totalseconds - hour * 3600;
+            const minute = countminute / 60;
+            setRuntimeHour(hour);
+            setRuntimeMinute(minute);
+
+            // console.log("data-movies :",response.data);
+            // setLoading(true);
+            // const hours = Math.floor(movies.runtime / 60);
+            // const hourdata = Math.floor(movies.runtime / 60);
+            // setRuntimeHour(hourdata);
             
         } catch (e) {
             console.log(e.message)
@@ -45,9 +55,7 @@ export default function Detail(props) {
                     api_key : '23f9e1b2766556fcef37c45865d99a77',
                 }
             });
-            console.log("credit-data :",response.data);
             setCredits(response.data.crew);
-            console.log("credite-state:",credits);
             const story = [];
             const director=[]
             response.data.crew.map(crew =>{
@@ -68,8 +76,6 @@ export default function Detail(props) {
             });
             setDirector(director)
             setStory(story)
-            console.log("data-story :",story);
-            console.log("data-director :",director);
         } catch (e) {
             console.log(e.message);
         }
@@ -118,7 +124,7 @@ export default function Detail(props) {
                                         })
                                     }
                                 </p>
-                                <p class="runtime">{runtimehour}h </p>
+                                <p class="runtime">{runtimehour}h {runtimeminute}m</p>
                             </div>
                         </div>
                         <div class="action">
