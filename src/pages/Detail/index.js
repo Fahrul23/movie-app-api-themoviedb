@@ -7,13 +7,14 @@ export default function Detail(props) {
     
     
     const [movies, setMovies] = useState();
-    const [loading,setLoading] = useState();
     const [runtimehour,setRuntimeHour]=useState();
     const [runtimeminute,setRuntimeMinute]=useState();
     const [credits,setCredits]=useState();
     const [director,setDirector]=useState();
     const [story,setStory]=useState();
     const {id} = useParams();
+    
+    
     const Moviesdata = async () =>{
         try {
             let response = await axios.get(`https://api.themoviedb.org/3/movie/${id}`,{
@@ -34,16 +35,12 @@ export default function Detail(props) {
             setRuntimeHour(hour);
             setRuntimeMinute(minute);
 
-            // console.log("data-movies :",response.data);
-            // setLoading(true);
-            // const hours = Math.floor(movies.runtime / 60);
-            // const hourdata = Math.floor(movies.runtime / 60);
-            // setRuntimeHour(hourdata);
             
         } catch (e) {
             console.log(e.message)
         }
     }
+
     const getCredits = async()=>{
         
         try {
@@ -84,7 +81,7 @@ export default function Detail(props) {
     useEffect(()=>{
         Moviesdata();
         getCredits();
-    },[])
+    },[id])
 
     return (
         <div>

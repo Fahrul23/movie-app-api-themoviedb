@@ -25,13 +25,17 @@ header{
                 li{
                     margin-left: 10px;
                     list-style: none;
-                    a{
-                        text-decoration: none;
-                        padding: 20px 15px;
+                    button{
+                        padding: 0 15px;
                         font-weight: 500;
-                        color: #C6C8CB;
+                        background: none;
+                        border: none;
+                        color: #aaabac;
+                        font-size: 1em;
+                        cursor: pointer;
+                        display: inline-block;
                     }
-                    a:hover{
+                    button:hover{
                         color: white;
                     }
                 }
@@ -87,14 +91,15 @@ header{
                     border-radius: 4px;
                     line-height: 24px;
                     height: 24px;
-                    a{
-                        text-decoration: none;
-                        color: #fff;
+                    button{
+                        padding: 0 15px;
                         font-weight: 500;
-                        padding: 0 12px;
-                        font-size: 12px;
+                        background: none;
                         border: none;
-                        font-weight: 500;
+                        color: white;
+                        font-size: 0.7em;
+                        cursor: pointer;
+                        display: inline-block;
                         text-transform: uppercase;
                     }
                 }
@@ -108,16 +113,18 @@ header{
                     border-radius: 4px;
                     line-height: 24px;
                     height: 24px;
-                    a{
-                        text-decoration: none;
-                        color: #fff;
+                    button{
+                        padding: 0 15px;
                         font-weight: 500;
-                        padding: 0 12px;
-                        font-size: 12px;
+                        background: none;
                         border: none;
+                        color:#fff;
+                        font-size: 0.7em;
+                        cursor: pointer;
+                        display: inline-block;
                         text-transform: uppercase;
                     }
-                    a:hover{
+                    button:hover{
                         color: #fff;
                     }
                 }

@@ -28,10 +28,10 @@ function Header(props) {
                             <h3>MOVIE - APP</h3>
                         </div>
                         <ul class="menu">
-                            <li><a href="#">Movies</a></li>
-                            <li><a href="#">TV Show</a></li>
-                            <li><a href="#">People</a></li>
-                            <li><a href="#">More</a></li>
+                            <li><button>Movies</button></li>
+                            <li><button>TV Show</button></li>
+                            <li><button>People</button></li>
+                            <li><button>More</button></li>
                         </ul>
                     </div>
                     <div class="nav-right">
@@ -40,10 +40,10 @@ function Header(props) {
                                 <div class="lang">EN</div>
                             </li>
                         <li class="login">
-                            <a href="#">Login</a>
+                            <button>Login</button>
                         </li>
                         <li class="register">
-                                <a href="#">Register</a>
+                                <button>Register</button>
                             </li>
                             <li class="search">
                                 <i class="fas fa-search"></i>    

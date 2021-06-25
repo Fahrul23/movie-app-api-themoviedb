@@ -1,14 +1,11 @@
 import React,{useEffect,useState} from 'react';
 import axios from 'axios';
-import { useHistory } from 'react-router-dom';
 import { CardMoviesTrailers } from '../../../../components';
 import './trailer.scss';
-// import './trailer.scss';
 function Trailers(props) {
     const [movies,setMovies] = useState({});
     const [loading, setLoading] = useState(false)
     
-    let history = useHistory();
     const getMovies = async () =>{
         try {
             let response = await axios.get('https://api.themoviedb.org/3/movie/popular',{
@@ -29,6 +26,7 @@ function Trailers(props) {
             console.log(e.message)
         }
     }
+    
 
     
 
