@@ -1,5 +1,8 @@
 # Movie App 
 
+<img src="https://user-images.githubusercontent.com/53459506/128280745-6d42bdf2-e5f6-4d54-9604-b4565467b572.png" width="860"></img>
+
+
 This website application is used to find movie information.
 This website app is built using ReactJs and TheMovieDb APIs
 
